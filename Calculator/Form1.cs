@@ -138,6 +138,9 @@ namespace Calculator
                 }
                 Result_Value = Double.Parse(textBox_Result.Text);
                 label_Show_Op.Text = " ";
+                PerformedOp = true; // gör så att performedOp blir till true so den rensar textboxen efter du har klickat =
+
+
             }
             catch (Exception ex)
             {
@@ -145,6 +148,7 @@ namespace Calculator
                
 
             }
+            Result_Value = 0; // gör så att den resetar efter du hgar gjort allt
 
         }
 
